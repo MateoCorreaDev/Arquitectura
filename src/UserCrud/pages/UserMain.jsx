@@ -5,7 +5,7 @@ export function UserMain() {
     const user = useUser()
     return (
         <div>
-            <h1>User Main</h1>
+            <h1 className='text-3xl font-bold underline'>User Main</h1>
             {
                 user.map((user) => {
                     return (
