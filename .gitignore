@@ -25,4 +25,7 @@ dist-ssr
 .venv
 /Documents/Dream
 
+#la api de google
+.env
+
 
