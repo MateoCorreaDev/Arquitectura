@@ -1,5 +1,6 @@
 import {getUser} from '../../API/UserApi/User'
-import {useEffect, useState} from 'react'
+import {useEffect} from 'react'
+import { useState } from 'react'
 
 export function useUser() {
     const [user, setUser] = useState([])
@@ -9,4 +10,10 @@ export function useUser() {
         })
     }, [])
     return user
+}
+
+export function useModal() {
+    const [modal, setModal] = useState(false)
+    const toggle = () => setModal(!modal)
+    return { modal, toggle }
 }
